@@ -1,7 +1,7 @@
 import './App.css'
 import './components/navbar'
 import Sidebar from './components/sidebar'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Index from './components'
 import CtaButtons from './components/cta-buttons'
 import RoundButtons from './components/round-buttons'
@@ -23,6 +23,11 @@ function App() {
             render={({ location }) => (
               <Switch location={location}>
                 <Route path="/" exact component={Index} />
+                <Route
+                  path="/components"
+                  exact
+                  render={() => <Redirect to="/components/cta-buttons" />}
+                />
                 <Route path="/components/cta-buttons" component={CtaButtons} />
                 <Route
                   path="/components/round-buttons"

@@ -12,11 +12,7 @@ class Sidebar extends Component {
         <NavLink to="/" exact activeClassName="active">
           Installation
         </NavLink>
-        <NavLink
-          to="/components/"
-          activeClassName="active"
-          style={{ pointerEvents: 'none' }}
-        >
+        <NavLink to="/components/" activeClassName="active">
           Components
         </NavLink>
         <div className="subMenu">
