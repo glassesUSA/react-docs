@@ -67,6 +67,9 @@ class Tooltip extends Component {
               <Code styling="inline">.dsmTooltip right</Code>. To make the
               tooltip only open on "click" add the class{' '}
               <Code styling="inline">.click</Code> in addition.
+              <p /> When the tooltip is clickable you have the option to add a
+              close button as well by adding the{' '}
+              <Code styling="inline">close</Code> class to the element.
               <Code>
                 {`<div class="dsmTooltip">Some text here</div>`}
                 <br /> <br />
@@ -79,6 +82,8 @@ class Tooltip extends Component {
                 {`<div class="dsmTooltip bottom">Some text here</div>`}
                 <br /> <br />
                 {`<div class="dsmTooltip click">Some text here</div>`}
+                <br /> <br />
+                {`<div class="dsmTooltip click close">Some text here</div>`}
               </Code>{' '}
               <div
                 className="exampleContainer"
@@ -112,6 +117,10 @@ class Tooltip extends Component {
                 </div>
                 <div>
                   <div className="dsmTooltip click">Click me!</div>
+                  Click me!
+                </div>
+                <div>
+                  <div className="dsmTooltip click close">Click me!</div>
                   Click me!
                 </div>
               </div>
