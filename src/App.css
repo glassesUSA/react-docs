@@ -87,6 +87,7 @@
           align-items: center;
           gap: 20px;
           background-color: #F1F1F1;
+          font-family: monospace;
         }
 
         .iconBox svg {
@@ -108,10 +109,6 @@
 
         }
 
-
-        /* .iconGrid i:nth-of-type(3n) {
-          margin-left: 138px;
-        } */
         .iconGrid .col1,
         .iconGrid .col2,
         .iconGrid .col3 {
