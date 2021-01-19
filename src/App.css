@@ -141,7 +141,7 @@
         }
 
         .content {
-          font-size: 13px;
+          font-size: 14px;
           padding: 40px;
           line-height: 19px;
           color: #2D2D2D;
@@ -167,7 +167,7 @@
           top: 50px;
           position: sticky;
           color: #898989;
-          font-size: 12px;
+          font-size: 14px;
           display: flex;
           flex-direction: column;
           gap: 30px;
