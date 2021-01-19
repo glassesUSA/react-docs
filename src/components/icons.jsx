@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Code from './common/code.jsx'
-import CopyCode from './common/copyCode.jsx'
+import CopyIcon from './common/copyIcon.jsx'
 import Section from './common/section.jsx'
 
 class Icons extends Component {
@@ -24,58 +24,41 @@ class Icons extends Component {
               <Code>{'<i class="dsmIcons clock"></i>'}</Code>
               <div className="exampleContainer iconGrid">
                 <div className="col1">
-                  <span className="colHeading">Class</span>
-                  <span className="colHeading">Preview</span>
-                  <span className="colHeading">Copy Code</span>
-                  <Code styling="inline">.gift</Code>
-                  <i className="dsmIcons gift"></i>
-                  <CopyCode>{'<i class="dsmIcons gift"></i>'}</CopyCode>
-                  <Code styling="inline">.money</Code>
-                  <i className="dsmIcons money"></i>
-                  <CopyCode>{'<i class="dsmIcons money"></i>'}</CopyCode>
-                  <Code styling="inline">.approve</Code>
-                  <i className="dsmIcons approve"></i>
-                  <CopyCode>{'<i class="dsmIcons approve"></i>'}</CopyCode>
-                  <Code styling="inline">.lenses</Code>
-                  <i className="dsmIcons lenses"></i>
-                  <CopyCode>{'<i class="dsmIcons lenses"></i>'}</CopyCode>
-                  <Code styling="inline">.rx</Code>
-                  <i className="dsmIcons rx"></i>
-                  <CopyCode>{'<i class="dsmIcons rx"></i>'}</CopyCode>
-                  <Code styling="inline">.visual-comfort</Code>
-                  <i className="dsmIcons visual-comfort"></i>
-                  <CopyCode>
-                    {'<i class="dsmIcons visual-comfort"></i>'}
-                  </CopyCode>
-                  <Code styling="inline">.upload</Code>
-                  <i className="dsmIcons upload"></i>
-                  <CopyCode>{'<i class="dsmIcons upload"></i>'}</CopyCode>
+                  <CopyIcon name="gift"></CopyIcon>
+                  <CopyIcon name="money"></CopyIcon>
+                  <CopyIcon name="approve"></CopyIcon>
+                  <CopyIcon name="lenses"></CopyIcon>
+                  <CopyIcon name="visual-comfort"></CopyIcon>
+                  <CopyIcon name="arrow-left"></CopyIcon>
+                  <CopyIcon name="arrow-right"></CopyIcon>
+                  <CopyIcon name="arrow-up"></CopyIcon>
+                  <CopyIcon name="arrow-down"></CopyIcon>
+                  <CopyIcon name="call"></CopyIcon>
                 </div>
                 <div className="col2">
-                  <span className="colHeading">Class</span>
-                  <span className="colHeading">Preview</span>
-                  <span className="colHeading">Copy Code</span>
-                  <Code styling="inline">.arrow-left</Code>
-                  <i className="dsmIcons arrow-left"></i>
-                  <CopyCode>{'<i class="dsmIcons arrow-left"></i>'}</CopyCode>
-                  <Code styling="inline">.arrow-right</Code>
-                  <i className="dsmIcons arrow-right"></i>
-                  <CopyCode>{'<i class="dsmIcons arrow-right"></i>'}</CopyCode>
-                  <Code styling="inline">.arrow-up</Code>
-                  <i className="dsmIcons arrow-up"></i>
-                  <CopyCode>{'<i class="dsmIcons arrow-up"></i>'}</CopyCode>
-                  <Code styling="inline">.arrow-down</Code>
-                  <i className="dsmIcons arrow-down"></i>
-                  <CopyCode>{'<i class="dsmIcons arrow-down"></i>'}</CopyCode>
-                  <Code styling="inline">.call</Code>
-                  <i className="dsmIcons call"></i>
-                  <CopyCode>{'<i class="dsmIcons call"></i>'}</CopyCode>
-                  <Code styling="inline">.help</Code>
-                  <i className="dsmIcons help"></i>
-                  <CopyCode>{'<i class="dsmIcons help"></i>'}</CopyCode>
-                  <Code styling="inline">.reply</Code>
-                  <i className="dsmIcons reply"></i>
-                  <CopyCode>{'<i class="dsmIcons reply"></i>'}</CopyCode>
+                  <CopyIcon name="help"></CopyIcon>
+                  <CopyIcon name="reply"></CopyIcon>
+                  <CopyIcon name="computer"></CopyIcon>
+                  <CopyIcon name="lock"></CopyIcon>
+                  <CopyIcon name="mobile"></CopyIcon>
+                  <CopyIcon name="credit_card"></CopyIcon>
+                  <CopyIcon name="truck"></CopyIcon>
+                  <CopyIcon name="search"></CopyIcon>
+                  <CopyIcon name="anti-reflect"></CopyIcon>
+                  <CopyIcon name="calendar"></CopyIcon>
+                </div>
+
+                <div className="col3">
+                  <CopyIcon name="glasses"></CopyIcon>
+                  <CopyIcon name="choose-frame"></CopyIcon>
+                  <CopyIcon name="map"></CopyIcon>
+                  <CopyIcon name="chat"></CopyIcon>
+                  <CopyIcon name="money_round"></CopyIcon>
+                  <CopyIcon name="form"></CopyIcon>
+                  <CopyIcon name="uv_protection"></CopyIcon>
+                  <CopyIcon name="camera"></CopyIcon>
+                  <CopyIcon name="try_online"></CopyIcon>
+                  <CopyIcon name="clock"></CopyIcon>
                 </div>
               </div>
             </Section>
