@@ -76,7 +76,7 @@ class Tooltip extends Component {
                 <br /> <br />
                 {`<div class="dsmTooltip up">Some text here</div>`}
                 <br /> <br />
-                {`<div class="dsmTooltip down">Some text here</div>`}
+                {`<div class="dsmTooltip bottom">Some text here</div>`}
                 <br /> <br />
                 {`<div class="dsmTooltip click">Some text here</div>`}
               </Code>{' '}
@@ -85,6 +85,7 @@ class Tooltip extends Component {
                 style={{
                   display: 'flex',
                   flexWrap: 'wrap',
+                  columnGap: '20px',
                   alignContent: 'center',
                   alignItems: 'flex-end',
                 }}
@@ -106,7 +107,7 @@ class Tooltip extends Component {
                   Hover upwards!
                 </div>
                 <div>
-                  <div className="dsmTooltip down">Some text here</div>
+                  <div className="dsmTooltip bottom">Some text here</div>
                   Hover downwards!
                 </div>
                 <div>
