@@ -100,6 +100,14 @@
           justify-content: flex-start;
         }
 
+        .icon-flexbox {
+          display: grid;
+          grid-template-columns: 29px 1fr;
+          width: 100%;
+          gap: 21px;
+
+        }
+
 
         /* .iconGrid i:nth-of-type(3n) {
           margin-left: 138px;

@@ -10,7 +10,7 @@ const CopyIcon = (props) => {
   })
 
   return (
-    <React.Fragment>
+    <div className="icon-flexbox">
       <i className={`dsmIcons ${props.name}`}></i>
       <CopyToClipboard text={`<i class="dsmIcons ${props.name}"></i>`}>
         <div style={{ position: 'relative' }} className="iconBox">
@@ -61,7 +61,7 @@ const CopyIcon = (props) => {
           </svg>
         </div>
       </CopyToClipboard>
-    </React.Fragment>
+    </div>
   )
 }
 export default CopyIcon
