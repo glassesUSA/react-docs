@@ -39,7 +39,7 @@ function App() {
                 <Route path="/components/badges" component={Badges} />
                 <Route path="/components/shadows" component={Shadows} />
                 <Route path="/components/colours" component={Colours} />
-                <Route path="/components/icon-library" component={Icons} />
+                <Route path="/icon-library" component={Icons} />
               </Switch>
             )}
           />
