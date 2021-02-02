@@ -11,8 +11,8 @@ const CopyIcon = (props) => {
 
   return (
     <div className="icon-flexbox">
-      <i className={`dsmIcons ${props.name}`}></i>
-      <CopyToClipboard text={`<i class="dsmIcons ${props.name}"></i>`}>
+      <i className={`${props.prefix} ${props.name}`}></i>
+      <CopyToClipboard text={`<i class="${props.prefix} ${props.name}"></i>`}>
         <div style={{ position: 'relative' }} className="iconBox">
           {props.name}
           <svg
@@ -63,5 +63,8 @@ const CopyIcon = (props) => {
       </CopyToClipboard>
     </div>
   )
+}
+CopyIcon.defaultProps = {
+  prefix: 'dsmIcons',
 }
 export default CopyIcon

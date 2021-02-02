@@ -12,6 +12,7 @@ import Badges from './components/badges'
 import Shadows from './components/shadow'
 import Colours from './components/colours'
 import Icons from './components/icons'
+import Logos from './components/logos'
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/components/shadows" component={Shadows} />
                 <Route path="/components/colours" component={Colours} />
                 <Route path="/icon-library" component={Icons} />
+                <Route path="/logo-library" component={Logos} />
               </Switch>
             )}
           />

@@ -44,6 +44,9 @@ class Sidebar extends Component {
         <NavLink to="/icon-library" activeClassName="active">
           Icons Library
         </NavLink>
+        <NavLink to="/logo-library" activeClassName="active">
+          Logo Library
+        </NavLink>
       </div>
     )
   }
