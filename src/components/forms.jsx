@@ -280,7 +280,7 @@ class Forms extends Component {
                 {'</form>'}
               </Code>
             </Section>
-            <Section title="Radio Button" id="radiobutton">
+            <Section title="Radio Button" id="radio">
               These are used for small bodies of text. There are three states
               available: default, disabled and error. If there is an error add
               the <Code styling="inline">error</Code> class to the span element.
@@ -403,6 +403,55 @@ class Forms extends Component {
                 {'</form>'}
               </Code>
             </Section>
+            <Section title="Ticked Checkbox" id="tickedbox">
+              These are used for small bodies of text. There are two sizes
+              available: default and large. To change the size add the <Code styling="inline">data-size="large"</Code> attribute. To apply the ticked event, add the <Code styling="inline">data-ticked="true"</Code> attribute.
+              <form action="" className="dsmForm exampleContainer" style={{ alignItems: 'center' }}>
+                <label className="checkboxContainer">
+                  <input type="checkbox" />
+                  <span className="checkbox ticked">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.4 12.4">
+                      <path
+                        fill="none"
+                        stroke="#fff"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2.4"
+                        d="M1.2 6.3l4.7 4.9 7.3-10"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+                <label className="checkboxContainer large">
+                  <input type="checkbox" />
+                  <span className="checkbox ticked">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.4 12.4">
+                      <path
+                        fill="none"
+                        stroke="#fff"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2.4"
+                        d="M1.2 6.3l4.7 4.9 7.3-10"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+                
+              </form>
+              <Code>
+                {`<form action="" class="dsmForm">`} <br />
+                {`  <label class="checkboxContainer" data-checked=true></label>`} <br />
+                {'</form>'}
+              </Code>{' '}
+              <Code>
+                {`// Large`} <br />
+                {`<form action="" class="dsmForm">`} <br />
+                {`  <label class="checkboxContainer" data-checked=true data-size="large"></label>`}
+                <br />
+                {'</form>'}
+              </Code>
+            </Section>
           </div>
           <Scrollspy
             items={[
@@ -410,8 +459,9 @@ class Forms extends Component {
               'dropdown',
               'textarea',
               'textfield',
-              'radiobutton',
+              'radio',
               'checkbox',
+              'tickedbox',
             ]}
             componentTag="div"
             className="sideNav"
@@ -426,6 +476,7 @@ class Forms extends Component {
             <a href="#textfield">Text Field</a>
             <a href="#radio">Radio Button</a>
             <a href="#checkbox">Checkbox</a>
+            <a href="#tickedbox">Ticked Checkbox</a>
           </Scrollspy>
         </div>
       </div>
