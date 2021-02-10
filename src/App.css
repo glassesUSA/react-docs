@@ -36,6 +36,10 @@
           margin: 0;
         }
 
+        .logoGrid .icon-flexbox {
+          grid-template-columns: auto;
+        }
+
         .exampleContainer {
           display: grid;
           grid-template-columns: repeat(3, auto);
