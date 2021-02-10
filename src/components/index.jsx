@@ -27,7 +27,7 @@ class Index extends Component {
           }
           <br />
           {
-            '<script src="https://cdn.jsdelivr.net/gh/glassesUSA/dsm@latest/dist/dsm-effects.js"></script>'
+            '<script type="module" src="https://cdn.jsdelivr.net/gh/glassesUSA/dsm@latest/dist/dsm-effects.js"></script>'
           }
         </Code>
       </div>
