@@ -5,7 +5,11 @@ import Scrollspy from 'react-scrollspy'
 
 class CtaButtons extends Component {
   state = {}
-
+  componentDidMount() {
+    document
+      .querySelectorAll('.dsmButton')
+      .forEach((e) => (e.innerHTML = `<span>${e.innerHTML}</span>`))
+  }
   render() {
     return (
       <div>
