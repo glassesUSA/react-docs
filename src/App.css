@@ -113,6 +113,10 @@
 
         }
 
+        svg.dsmIcons {
+          width: 100%;
+        }
+
         .iconGrid .col1,
         .iconGrid .col2,
         .iconGrid .col3 {

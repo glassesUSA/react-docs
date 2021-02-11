@@ -23,37 +23,32 @@ class Icons extends Component {
               that a normal font would have.
               <Code>{'<i class="dsmIcons clock"></i>'}</Code>
               <div className="exampleContainer iconGrid">
-                <CopyIcon name="gift"></CopyIcon>
-                <CopyIcon name="money"></CopyIcon>
-                <CopyIcon name="approve"></CopyIcon>
-                <CopyIcon name="lenses"></CopyIcon>
-                <CopyIcon name="visual-comfort"></CopyIcon>
-                <CopyIcon name="arrow-left"></CopyIcon>
-                <CopyIcon name="arrow-right"></CopyIcon>
-                <CopyIcon name="arrow-up"></CopyIcon>
-                <CopyIcon name="arrow-down"></CopyIcon>
-                <CopyIcon name="call"></CopyIcon>
-                <CopyIcon name="help"></CopyIcon>
-                <CopyIcon name="reply"></CopyIcon>
-                <CopyIcon name="computer"></CopyIcon>
-                <CopyIcon name="lock"></CopyIcon>
-                <CopyIcon name="mobile"></CopyIcon>
-                <CopyIcon name="credit_card"></CopyIcon>
-                <CopyIcon name="truck"></CopyIcon>
-                <CopyIcon name="search"></CopyIcon>
-                <CopyIcon name="anti-reflect"></CopyIcon>
-                <CopyIcon name="calendar"></CopyIcon>
-
-                <CopyIcon name="glasses"></CopyIcon>
-                <CopyIcon name="choose-frame"></CopyIcon>
-                <CopyIcon name="map"></CopyIcon>
-                <CopyIcon name="chat"></CopyIcon>
-                <CopyIcon name="money_round"></CopyIcon>
-                <CopyIcon name="form"></CopyIcon>
-                <CopyIcon name="uv_protection"></CopyIcon>
-                <CopyIcon name="camera"></CopyIcon>
-                <CopyIcon name="try_online"></CopyIcon>
-                <CopyIcon name="clock"></CopyIcon>
+                <CopyIcon name="app" />
+                <CopyIcon name="approve_circle" />
+                <CopyIcon name="approve" />
+                <CopyIcon name="arrow_down" />
+                <CopyIcon name="arrow_left" />
+                <CopyIcon name="arrow_right" />
+                <CopyIcon name="arrow_up" />
+                <CopyIcon name="call" />
+                <CopyIcon name="camera" />
+                <CopyIcon name="chat" />
+                <CopyIcon name="customer_service" />
+                <CopyIcon name="exit" />
+                <CopyIcon name="eyestrain_relief" />
+                <CopyIcon name="form" />
+                <CopyIcon name="gift" />
+                <CopyIcon name="glasses" />
+                <CopyIcon name="heart" />
+                <CopyIcon name="location" />
+                <CopyIcon name="minus" />
+                <CopyIcon name="money_guarantee" />
+                <CopyIcon name="money" />
+                <CopyIcon name="phone" />
+                <CopyIcon name="plus" />
+                <CopyIcon name="prescription_scanner" />
+                <CopyIcon name="search" />
+                <CopyIcon name="truck" />
               </div>
             </Section>
           </div>

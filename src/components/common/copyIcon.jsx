@@ -2,6 +2,8 @@ import React from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import 'tippy.js/dist/tippy.css' // optional
 import Tippy from '@tippyjs/react'
+import config from '../../svg-icons.js'
+import parse from 'html-react-parser'
 
 const CopyIcon = (props) => {
   let content = ''
@@ -9,12 +11,20 @@ const CopyIcon = (props) => {
   React.Children.toArray(props.children).forEach((e) => {
     !e.type ? (content += e) : (content += '\n')
   })
-  console.log(props.mode)
+
+  function addSVG(name, type) {
+    if (!config[name]) return ''
+    let el = document.createElement('template')
+    el.innerHTML = config[name]
+    el = el.content.firstChild
+    el.classList.add(...[type, name])
+    return el.outerHTML
+  }
   return (
     <React.Fragment>
       {!props.mode ? (
         <div className="icon-flexbox">
-          <i className={`${props.prefix} ${props.name}`}></i>
+          {parse(addSVG(props.name, props.prefix))}
           <CopyToClipboard
             text={`<i class="${props.prefix} ${props.name}"></i>`}
           >
@@ -78,7 +88,7 @@ const CopyIcon = (props) => {
             <div style={{ position: 'relative' }}>
               <Tippy
                 hideOnClick={false}
-                content={<i class={props.prefix + ' ' + props.name}></i>}
+                content={parse(addSVG(props.name, props.prefix))}
                 className="hoverTooltip"
               >
                 <div className="iconBox">

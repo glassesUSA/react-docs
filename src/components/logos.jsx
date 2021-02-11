@@ -29,7 +29,7 @@ class Logos extends Component {
                 <CopyIcon prefix="dsmLogo" mode="logo" name="alain_mikli" />
                 <CopyIcon prefix="dsmLogo" mode="logo" name="armani_exchange" />
                 <CopyIcon prefix="dsmLogo" mode="logo" name="autoflex" />
-                <CopyIcon prefix="dsmLogo" mode="logo" name="balenciaga" />
+                <CopyIcon prefix="dsmLogo" mode="logo" name="balenciage" />
                 <CopyIcon prefix="dsmLogo" mode="logo" name="blumarine" />
                 <CopyIcon prefix="dsmLogo" mode="logo" name="burberry" />
                 <CopyIcon prefix="dsmLogo" mode="logo" name="calvin_klein_ck" />
