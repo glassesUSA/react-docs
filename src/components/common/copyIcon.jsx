@@ -11,8 +11,10 @@ const CopyIcon = (props) => {
   React.Children.toArray(props.children).forEach((e) => {
     !e.type ? (content += e) : (content += '\n')
   })
+  console.log(config)
 
   function addSVG(name, type) {
+    console.log(config[name])
     if (!config[name]) return ''
     let el = document.createElement('template')
     el.innerHTML = config[name]

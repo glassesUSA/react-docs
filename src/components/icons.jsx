@@ -26,10 +26,10 @@ class Icons extends Component {
                 <CopyIcon name="app" />
                 <CopyIcon name="approve_circle" />
                 <CopyIcon name="approve" />
-                <CopyIcon name="arrow_down" />
-                <CopyIcon name="arrow_left" />
-                <CopyIcon name="arrow_right" />
-                <CopyIcon name="arrow_up" />
+                <CopyIcon name="arrow-down" />
+                <CopyIcon name="arrow-left" />
+                <CopyIcon name="arrow-right" />
+                <CopyIcon name="arrow-up" />
                 <CopyIcon name="call" />
                 <CopyIcon name="camera" />
                 <CopyIcon name="chat" />
