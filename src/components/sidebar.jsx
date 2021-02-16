@@ -37,6 +37,9 @@ class Sidebar extends Component {
           <NavLink to="/components/shadows" activeClassName="active">
             Shadows
           </NavLink>
+          <NavLink to="/components/accordian" activeClassName="active">
+            Accordian
+          </NavLink>
           {/* <NavLink to="/components/colours" activeClassName="active">
             Colours
           </NavLink> */}

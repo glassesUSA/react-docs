@@ -39,12 +39,18 @@ class Forms extends Component {
               Finally you can disable the dropdown element by adding{' '}
               <Code styling="inline">data-disabled=true</Code> to the container
               element.
-              <p></p> To access the event on value change, use the function{' '}
-              <Code styling="inline" language="js">
-                selectItem(value)
-              </Code>{' '}
-              value being the result that it will return to you. If you want to
-              change the default value, use the{' '}
+              <p></p> To access the event on value change, add an eventListener
+              onto the <Code styling="inline">.selectedItem</Code> div listening
+              for the "select" event.
+              <Code language="js">
+                {`document.querySelector('.selectedItem').addEventListener("select", (e) => {`}
+                <br />
+                {`  // Your function`}
+                <br />
+                {`})`}
+              </Code>
+              <br />
+              If you want to change the default value, use the{' '}
               <Code styling="inline">data-placeholder=""</Code> attribute and
               enter the desired placeholder you require.
               <form action="" className="dsmForm exampleContainer">
@@ -405,12 +411,22 @@ class Forms extends Component {
             </Section>
             <Section title="Ticked Checkbox" id="tickedbox">
               These are used for small bodies of text. There are two sizes
-              available: default and large. To change the size add the <Code styling="inline">data-size="large"</Code> attribute. To apply the ticked event, add the <Code styling="inline">data-ticked="true"</Code> attribute.
-              <form action="" className="dsmForm exampleContainer" style={{ alignItems: 'center' }}>
+              available: default and large. To change the size add the{' '}
+              <Code styling="inline">data-size="large"</Code> attribute. To
+              apply the ticked event, add the{' '}
+              <Code styling="inline">data-ticked="true"</Code> attribute.
+              <form
+                action=""
+                className="dsmForm exampleContainer"
+                style={{ alignItems: 'center' }}
+              >
                 <label className="checkboxContainer">
                   <input type="checkbox" />
                   <span className="checkbox ticked">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.4 12.4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 14.4 12.4"
+                    >
                       <path
                         fill="none"
                         stroke="#fff"
@@ -425,7 +441,10 @@ class Forms extends Component {
                 <label className="checkboxContainer large">
                   <input type="checkbox" />
                   <span className="checkbox ticked">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.4 12.4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 14.4 12.4"
+                    >
                       <path
                         fill="none"
                         stroke="#fff"
@@ -437,11 +456,11 @@ class Forms extends Component {
                     </svg>
                   </span>
                 </label>
-                
               </form>
               <Code>
                 {`<form action="" class="dsmForm">`} <br />
-                {`  <label class="checkboxContainer" data-checked=true></label>`} <br />
+                {`  <label class="checkboxContainer" data-checked=true></label>`}{' '}
+                <br />
                 {'</form>'}
               </Code>{' '}
               <Code>

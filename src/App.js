@@ -13,6 +13,7 @@ import Shadows from './components/shadow'
 import Colours from './components/colours'
 import Icons from './components/icons'
 import Logos from './components/logos'
+import Accordian from './components/accordian'
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/components/badges" component={Badges} />
                 <Route path="/components/shadows" component={Shadows} />
                 <Route path="/components/colours" component={Colours} />
+                <Route path="/components/accordian" component={Accordian} />
                 <Route path="/icon-library" component={Icons} />
                 <Route path="/logo-library" component={Logos} />
               </Switch>
