@@ -5,22 +5,11 @@ import Section from './common/section.jsx'
 class Accordian extends Component {
   state = {}
 
-  componentDidMount() {
+  componentDidUpdate() {
     document.querySelectorAll('.dsmAccordian').forEach((a) => {
       a.addEventListener('click', (e) => {
         e.preventDefault()
         let el = e.target.closest('details')
-
-        if (window.innerWidth < 768) {
-          document.querySelectorAll('.dsmAccordian').forEach((a) => {
-            if (a.getAttribute('open') == null) return
-            a.classList.add('closeAccordian')
-            setTimeout(() => {
-              a.removeAttribute('open')
-              a.classList.remove('closeAccordian')
-            }, 50)
-          })
-        }
 
         if (el.getAttribute('open') != null) {
           el.classList.add('closeAccordian')
