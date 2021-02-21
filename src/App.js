@@ -14,6 +14,7 @@ import Colours from './components/colours'
 import Icons from './components/icons'
 import Logos from './components/logos'
 import Accordian from './components/accordian'
+import Trustpilot from './components/trustpilot'
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
                 <Route path="/components/accordian" component={Accordian} />
                 <Route path="/icon-library" component={Icons} />
                 <Route path="/logo-library" component={Logos} />
+                <Route path="/trustpilot" component={Trustpilot} />
               </Switch>
             )}
           />

@@ -113,6 +113,14 @@
 
         }
 
+        .propertyType {
+          color: #6cb09d;
+        }
+
+        .propertyDefault {
+          color: #c95151;
+        }
+
         svg.dsmIcons {
           width: 100%;
         }

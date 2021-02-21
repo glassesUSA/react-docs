@@ -43,6 +43,9 @@ class Sidebar extends Component {
           {/* <NavLink to="/components/colours" activeClassName="active">
             Colours
           </NavLink> */}
+          <NavLink to="/trustpilot" activeClassName="active">
+            Trustpilot
+          </NavLink>
         </div>
         <NavLink to="/icon-library" activeClassName="active">
           Icons Library
