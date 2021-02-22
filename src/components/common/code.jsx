@@ -73,7 +73,7 @@ const Code = (props) => {
             style={github}
             language={props.language}
             customStyle={styles}
-            className={props.styling === 'inline' ? 'inlineStyling' : ''}
+            className={props.styling === 'inline' ? 'inlineStyling' : 'codeBox'}
           >
             {content}
           </SyntaxHighlighter>
@@ -84,7 +84,7 @@ const Code = (props) => {
           style={github}
           language={props.language}
           customStyle={styles}
-          className={props.styling === 'inline' ? 'inlineStyling' : ''}
+          className={props.styling === 'inline' ? 'inlineStyling' : 'codeBox'}
         >
           {content}
         </SyntaxHighlighter>

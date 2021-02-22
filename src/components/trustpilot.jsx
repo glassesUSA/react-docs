@@ -7,7 +7,12 @@ class Trustpilot extends Component {
   state = {}
   componentDidMount() {
     setTimeout(() => {
-      if (!document.querySelector('.dsmTrustpilot swiper-container')) {
+      if (
+        !document.querySelector('.dsmTrustpilot swiper-container') &&
+        document.querySelector('.dsmTrustpilot')
+      ) {
+        document.querySelector('.dsmTrustpilot').style.width =
+          document.querySelector('.dsmTrustpilot').parentNode.clientWidth + 'px'
         delete document.querySelector('.dsmTrustpilot').dataset.apikey
       }
     }, 200)
@@ -42,7 +47,7 @@ class Trustpilot extends Component {
               <Code>{`<div class="dsmTrustpilot"></div>`}</Code>{' '}
               <div
                 className="dsmTrustpilot"
-                style={{ marginTop: '35px', width: '100%' }}
+                style={{ marginTop: '35px', maxWidth: '800px' }}
                 data-apikey="jDYwz6VMwIzV6l6qwlZhFwqAm6AniQS1"
               ></div>
             </Section>

@@ -121,6 +121,14 @@
           color: #c95151;
         }
 
+        .dsmTrustpilot .swiper-outer {
+          margin: 0;
+        }
+
+        .codeBox code {
+          white-space: normal !important;
+        }
+
         svg.dsmIcons {
           width: 100%;
         }
