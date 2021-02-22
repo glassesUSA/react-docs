@@ -43,9 +43,9 @@ function App() {
                 <Route path="/components/shadows" component={Shadows} />
                 <Route path="/components/colours" component={Colours} />
                 <Route path="/components/accordian" component={Accordian} />
+                <Route path="/components/trustpilot" component={Trustpilot} />
                 <Route path="/icon-library" component={Icons} />
                 <Route path="/logo-library" component={Logos} />
-                <Route path="/trustpilot" component={Trustpilot} />
               </Switch>
             )}
           />

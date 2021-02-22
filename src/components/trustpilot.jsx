@@ -5,6 +5,13 @@ import Section from './common/section.jsx'
 
 class Trustpilot extends Component {
   state = {}
+  componentDidMount() {
+    setTimeout(() => {
+      if (!document.querySelector('.dsmTrustpilot swiper-container')) {
+        delete document.querySelector('.dsmTrustpilot').dataset.apikey
+      }
+    }, 200)
+  }
 
   render() {
     return (
@@ -33,7 +40,11 @@ class Trustpilot extends Component {
               of different settings to customise what data is shown which is
               listed below.
               <Code>{`<div class="dsmTrustpilot"></div>`}</Code>{' '}
-              <div className="dsmTrustpilot"></div>
+              <div
+                className="dsmTrustpilot"
+                style={{ marginTop: '35px', width: '100%' }}
+                data-apikey="jDYwz6VMwIzV6l6qwlZhFwqAm6AniQS1"
+              ></div>
             </Section>
             <Section title="Properties" id="properties">
               There are a number of properties that can be applied to the
@@ -46,8 +57,6 @@ class Trustpilot extends Component {
                 <span className="previewTitle">Default</span>
                 <span className="previewTitle">Type</span>
                 <span className="previewTitle">Description</span>
-                {/* data-stars="4,5" data-loop="false" data-touch-move=false
-        data-slides="3" data-space-between="20" data-min-chars="100" */}
                 <Code styling="inline">data-apikey</Code>
                 <span className="propertyType">null</span>
                 <span className="propertyDefault">string</span>
@@ -93,6 +102,28 @@ class Trustpilot extends Component {
                 <span>
                   This is used to set the minimum characters allowed in a
                   review.
+                </span>
+                <Code styling="inline">data-tags</Code>
+                <span className="propertyType">null</span>
+                <span className="propertyDefault">string</span>
+                <span>This is used to filter the results by tag.</span>
+                <Code styling="inline">data-slides-per-group</Code>
+                <span className="propertyType">1</span>
+                <span className="propertyDefault">number</span>
+                <span>
+                  This is used to decide how many slides to scroll each time the
+                  arrow is pressed.
+                </span>
+                <Code styling="inline">data-speed</Code>
+                <span className="propertyType">300</span>
+                <span className="propertyDefault">number</span>
+                <span>This is used to set the speed of the transition</span>
+                <Code styling="inline">data-max-slides</Code>
+                <span className="propertyType">null</span>
+                <span className="propertyDefault">number</span>
+                <span>
+                  This is used to set the maximum amount of slides that will be
+                  displayed
                 </span>
               </div>
             </Section>

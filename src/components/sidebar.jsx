@@ -43,7 +43,7 @@ class Sidebar extends Component {
           {/* <NavLink to="/components/colours" activeClassName="active">
             Colours
           </NavLink> */}
-          <NavLink to="/trustpilot" activeClassName="active">
+          <NavLink to="/components/trustpilot" activeClassName="active">
             Trustpilot
           </NavLink>
         </div>

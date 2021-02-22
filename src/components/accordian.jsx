@@ -5,8 +5,9 @@ import Section from './common/section.jsx'
 class Accordian extends Component {
   state = {}
 
-  componentDidUpdate() {
+  componentDidMount() {
     document.querySelectorAll('.dsmAccordian').forEach((a) => {
+      if (!a.getAttribute('aria-listener')) return
       a.addEventListener('click', (e) => {
         e.preventDefault()
         let el = e.target.closest('details')
@@ -16,7 +17,10 @@ class Accordian extends Component {
           setTimeout(() => {
             el.removeAttribute('open')
             el.classList.remove('closeAccordian')
-          }, 50)
+          }, 200)
+          setTimeout(() => {
+            el.style.minHeight = '0px'
+          }, 150)
         } else {
           el.setAttribute('open', '')
         }
