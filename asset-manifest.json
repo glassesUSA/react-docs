@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dsm-docs/static/css/main.e3083d8d.chunk.css",
-    "main.js": "/dsm-docs/static/js/main.ecd9c578.chunk.js",
-    "main.js.map": "/dsm-docs/static/js/main.ecd9c578.chunk.js.map",
+    "main.js": "/dsm-docs/static/js/main.be822835.chunk.js",
+    "main.js.map": "/dsm-docs/static/js/main.be822835.chunk.js.map",
     "runtime-main.js": "/dsm-docs/static/js/runtime-main.9eca59ea.js",
     "runtime-main.js.map": "/dsm-docs/static/js/runtime-main.9eca59ea.js.map",
     "static/css/2.3ca2e7a5.chunk.css": "/dsm-docs/static/css/2.3ca2e7a5.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.3ca2e7a5.chunk.css",
     "static/js/2.076bd320.chunk.js",
     "static/css/main.e3083d8d.chunk.css",
-    "static/js/main.ecd9c578.chunk.js"
+    "static/js/main.be822835.chunk.js"
   ]
 }
